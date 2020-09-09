@@ -10,13 +10,21 @@ public class Problem3 {
 	System.out.println("Enter the number+:");
 	int num = s.nextInt();
 	
-	int a[] = new int[num + 1]; 
+	String a[] =new String[num+1]; 
+	int x=0;
 		for(int i=1;i<num;i++) {
+			a[i]= a[i-1] +"  "+ i;	
+			//System.out.println("A{i} : "+ a[i]);
 			if(i%2!=0) {
-				a[i]=i;
 				System.out.println("x = "+i+" then "+a[i]);
+				
 			}else {
-				System.out.println("x = "+i+" then "+a[i]);
+					if(i%2!=0) {
+						System.out.println("x = "+i+" then "+a[i]);
+					}else {
+						System.out.println("x = "+i+" then "+a[i-1]);
+					}
+				
 			}
 		}
 
