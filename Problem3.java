@@ -13,18 +13,15 @@ public class Problem3 {
 	String a[] =new String[num+1]; 
 	int x=0;
 		for(int i=1;i<num;i++) {
-			a[i]= a[i-1] +"  "+ i;	
+			
 			//System.out.println("A{i} : "+ a[i]);
 			if(i%2!=0) {
+				a[i]= a[i-1] +"  "+ i;	
 				System.out.println("x = "+i+" then "+a[i]);
 				
 			}else {
-					if(i%2!=0) {
-						System.out.println("x = "+i+" then "+a[i]);
-					}else {
-						System.out.println("x = "+i+" then "+a[i-1]);
-					}
-				
+					a[i]= a[i-1] ;	
+					System.out.println("x = "+i+" then "+a[i-1]);
 			}
 		}
 
